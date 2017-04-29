@@ -23,27 +23,35 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pro-headphones-wp' ); ?></a>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+  <!-- NAVBAR -->
+  <header>
+       <div class="row">
+         <div class="large-12 columns">
+             <div class="top-bar">
+                 <div class="top-bar-left">
+                     <ul class="menu">
+                         <li class="menu-text"><a href="index.html">Pro Headphones</a></li>
+                         <li><a href="/blog.html">Blog</a></li>
+                         <li><a href="/about.html">About</a></li>
+                     </ul>
+                 </div>
+                 <div class="top-bar-right">
+                     <ul class="menu">
+                         <li><input type="search" placeholder="Search"></li>
+                         <li><button type="button" class="button">Search</button></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+       </div>
+     </header>
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'pro-headphones-wp' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+   <section id="feature">
+       <div class="row">
+           <div class="large-12 columns">
+               <img src="images/headphones.jpeg" alt="headphones image">
+           </div>
+       </div>
+   </section>
 
 	<div id="content" class="site-content">
