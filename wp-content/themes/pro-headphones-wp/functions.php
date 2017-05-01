@@ -105,7 +105,13 @@ add_action( 'widgets_init', 'pro_headphones_wp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function pro_headphones_wp_scripts() {
-	wp_enqueue_style( 'pro-headphones-wp-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'foundation.css', get_template_directory_uri() .'/css/foundation.css' );
+
+  wp_enqueue_style( 'app.css', get_template_directory_uri() .'/css/app.css' );
+
+  wp_enqueue_style( 'icons', get_template_directory_uri() .'/css/foundation-icons/foundation-icons.css' );
+
+  wp_enqueue_style( 'pro-headphones-wp-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'pro-headphones-wp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -49,7 +49,7 @@
    <section id="feature">
        <div class="row">
            <div class="large-12 columns">
-               <img src="images/headphones.jpeg" alt="headphones image">
+               <img src="<?php bloginfo('template_directory'); ?>/images/headphones.jpeg" alt="headphones image">
            </div>
        </div>
    </section>

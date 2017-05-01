@@ -16,7 +16,7 @@ li {
 }
 
 i {
-    margin-right: 1em; 
+    margin-right: 1em;
     font-size: 2em;
 }
 
@@ -37,7 +37,7 @@ footer li {
 }
 
 .button {
-    background-color: #534c4c;    
+    background-color: #534c4c;
 }
 
 .button:hover {
@@ -48,7 +48,7 @@ footer li {
     background: none;
 }
 
-#feature img { 
+#feature img {
     margin-bottom: 2em;
 }
 
